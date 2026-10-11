@@ -25,19 +25,34 @@ export function Header() {
         <Logo />
         <nav aria-label="Primary" className="hidden items-center gap-8 lg:flex">
           {NAV.map((item) => (
-            <NavItem key={item.label} item={item} active={!item.href.includes("?") && pathname === item.href} />
+            <NavItem
+              key={item.label}
+              item={item}
+              active={!item.href.includes("?") && pathname === item.href}
+            />
           ))}
         </nav>
         <div className="flex items-center gap-3">
-          <Button href="/properties" variant="outline" className="hidden px-5 py-2 text-white sm:inline-flex">
+          <Button
+            href="/properties"
+            variant="outline"
+            className="hidden px-5 py-2 text-white sm:inline-flex"
+          >
             Browse Properties
           </Button>
           <button
-            type="button" aria-expanded={open} aria-controls="mobile-nav"
-            aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)}
+            type="button"
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            aria-label={open ? "Close menu" : "Open menu"}
+            onClick={() => setOpen(!open)}
             className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/30 focus-visible:ring-2 focus-visible:ring-brand lg:hidden"
           >
-            {open ? <X className="h-5 w-5" aria-hidden /> : <Menu className="h-5 w-5" aria-hidden />}
+            {open ? (
+              <X className="h-5 w-5" aria-hidden />
+            ) : (
+              <Menu className="h-5 w-5" aria-hidden />
+            )}
           </button>
         </div>
       </Container>

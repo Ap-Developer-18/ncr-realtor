@@ -6,11 +6,16 @@ import { Header } from "@/components/layout/Header";
 import { MotionProvider } from "@/components/layout/MotionProvider";
 import "./globals.css";
 
-const urbanist = Urbanist({ subsets: ["latin"], variable: "--font-urbanist", display: "swap" });
+const urbanist = Urbanist({
+  subsets: ["latin"],
+  variable: "--font-urbanist",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Find the Right Property",
-  description: "Discover thoughtfully selected homes, premium residences and commercial spaces.",
+  description:
+    "Discover thoughtfully selected homes, premium residences and commercial spaces.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
