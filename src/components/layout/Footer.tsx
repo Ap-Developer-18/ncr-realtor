@@ -6,7 +6,7 @@ import { FOOTER_COLUMNS } from "@/data/site";
 export function Footer() {
   return (
     <footer className="bg-forest text-white">
-      <Container className="pb-10 md:pb-16">
+      <Container className="py-10 md:py-16">
         <div className="grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-6 lg:gap-x-8">
           <FooterBrand />
           {FOOTER_COLUMNS.map((c) => (
