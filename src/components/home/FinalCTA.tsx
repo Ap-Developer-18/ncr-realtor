@@ -1,19 +1,19 @@
 import { Button } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
 import { Reveal } from "@/components/ui/Reveal";
-import { Section } from "@/components/layout/SectionContainer";
+import { Container, Section } from "@/components/layout/SectionContainer";
 import { IMG } from "@/lib/images";
 
 export function FinalCTA() {
   return (
     <Section tone="dark" id="contact">
-      <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+      <Container className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
         <Reveal className="relative w-full lg:mx-auto lg:max-w-md">
           <Photo
             src={IMG.cta}
             alt="Contemporary home exterior"
             sizes="(min-width: 1024px) 40vw, 90vw"
-            className="aspect-square rounded-2xl"
+            className="aspect-square rounded-2xl lg:rounded-t-full"
           />
         </Reveal>
         <Reveal>
@@ -37,7 +37,7 @@ export function FinalCTA() {
             </Button>
           </div>
         </Reveal>
-      </div>
+      </Container>
     </Section>
   );
 }
