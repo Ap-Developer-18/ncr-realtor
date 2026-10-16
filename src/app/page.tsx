@@ -25,7 +25,7 @@ export default function HomePage() {
       <MarketInsights />
       <PopularLocations />
       <FeaturedProperties />
-      <DeveloperShowcase />
+      {/* <DeveloperShowcase /> */}
       <Testimonials />
       <FAQSection />
       <FinalCTA />

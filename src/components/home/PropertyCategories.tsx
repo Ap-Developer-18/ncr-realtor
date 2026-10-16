@@ -19,8 +19,12 @@ export function PropertyCategories() {
               className="group flex flex-col items-center border-t border-forest/40 py-8 text-center focus-visible:ring-2 focus-visible:ring-brand lg:items-start lg:text-left"
             >
               <Icon className="h-7 w-7 text-brand" aria-hidden />
-              <h3 className="mt-5 text-2xl font-normal transition-colors duration-300 group-hover:text-brand">{title}</h3>
-              <p className="mt-2 max-w-xs text-base leading-relaxed text-muted lg:text-lg">{description}</p>
+              <h3 className="mt-5 text-2xl font-normal transition-colors duration-300 group-hover:text-brand">
+                {title}
+              </h3>
+              <p className="mt-2 max-w-xs text-base leading-relaxed text-muted lg:text-lg">
+                {description}
+              </p>
             </Link>
           </RevealItem>
         ))}

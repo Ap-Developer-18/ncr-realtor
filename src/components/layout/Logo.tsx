@@ -5,10 +5,21 @@ const PATH =
 
 export function Logo({ className = "text-white" }: { className?: string }) {
   return (
-    <Link href="/" aria-label="Home" className={`inline-flex items-center gap-2 rounded focus-visible:ring-2 focus-visible:ring-brand ${className}`}>
-      <svg viewBox="0 0 37 38" className="h-10 w-10" aria-hidden fill="#FF6415" fillRule="evenodd">
+    <Link
+      href="/"
+      aria-label="Home"
+      className={`inline-flex items-center text-3xl font-semibold gap-2 rounded focus-visible:ring-2 focus-visible:ring-brand ${className}`}
+    >
+      <svg
+        viewBox="0 0 37 38"
+        className="h-10 w-10"
+        aria-hidden
+        fill="#FF6415"
+        fillRule="evenodd"
+      >
         <path d={PATH} />
       </svg>
+      <span>NCR Realtor</span>
     </Link>
   );
 }

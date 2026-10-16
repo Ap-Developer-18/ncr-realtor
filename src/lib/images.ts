@@ -1,7 +1,8 @@
-// Images are taken from the supplied Homeifye template markup. They are
+// Images are taken from the supplied ncr-realtor template markup. They are
 // reference assets: replace them with licensed images before going live.
 const base = "https://framerusercontent.com/images/";
-export const img = (id: string, width = 1200) => `${base}${id}.png?width=${width}`;
+export const img = (id: string, width = 1200) =>
+  `${base}${id}.png?width=${width}`;
 
 export const IMG = {
   hero: img("w064dsOBlcqx4PjFDOP5BsoxbE", 1600),
